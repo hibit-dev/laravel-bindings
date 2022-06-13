@@ -15,6 +15,9 @@ use App\Http\Controllers;
 |
 */
 
+Route::get('/images/upload', [Controllers\ImageUploadController::class, 'upload']);
+Route::get('/images/remove', [Controllers\ImageUploadController::class, 'remove']);
+
 Route::get('/bus-service', [Controllers\BusController::class, 'binding']);
 Route::get('/car-service', [Controllers\CarController::class, 'binding']);
 Route::get('/moto-service', [Controllers\MotorcycleController::class, 'binding']);
