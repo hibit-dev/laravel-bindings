@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/bus-service', [Controllers\BusController::class, 'binding']);
+Route::get('/car-service', [Controllers\CarController::class, 'binding']);
+Route::get('/moto-service', [Controllers\MotorcycleController::class, 'binding']);
+
