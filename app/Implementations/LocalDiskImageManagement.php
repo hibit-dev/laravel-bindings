@@ -2,9 +2,9 @@
 
 namespace App\Implementations;
 
-use App\Interfaces\ImageUpload;
+use App\Interfaces\ImageManagement;
 
-class LocalDiskImageUpload implements ImageUpload
+class LocalDiskImageManagement implements ImageManagement
 {
     public function upload(): bool
     {

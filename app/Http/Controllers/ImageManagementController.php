@@ -2,23 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Interfaces\ImageUpload;
+use App\Interfaces\ImageManagement;
 use Illuminate\Http\JsonResponse;
 
-class ImageUploadController extends Controller
+class ImageManagementController extends Controller
 {
-    public function upload(ImageUpload $imageUpload): JsonResponse
+    public function upload(ImageManagement $imageManagement): JsonResponse
     {
-        $success = $imageUpload->upload();
+        $success = $imageManagement->upload();
 
         return response()->json([
                                     'uploaded' => $success,
                                 ]);
     }
 
-    public function remove(ImageUpload $imageUpload): JsonResponse
+    public function remove(ImageManagement $imageManagement): JsonResponse
     {
-        $success = $imageUpload->remove();
+        $success = $imageManagement->remove();
 
         return response()->json([
                                     'removed' => $success,

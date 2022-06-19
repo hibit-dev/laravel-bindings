@@ -2,9 +2,9 @@
 
 namespace App\Implementations;
 
-use App\Interfaces\ImageUpload;
+use App\Interfaces\ImageManagement;
 
-class AmazonS3ImageUpload implements ImageUpload
+class AmazonS3ImageManagement implements ImageManagement
 {
     public function __construct()
     {

@@ -2,7 +2,7 @@
 
 namespace App\Interfaces;
 
-interface ImageUpload
+interface ImageManagement
 {
     public function upload(): bool;
 

@@ -2,9 +2,9 @@
 
 namespace App\Implementations;
 
-use App\Interfaces\ImageUpload;
+use App\Interfaces\ImageManagement;
 
-class GoogleDriveImageUpload implements ImageUpload
+class GoogleDriveImageManagement implements ImageManagement
 {
     public function __construct()
     {

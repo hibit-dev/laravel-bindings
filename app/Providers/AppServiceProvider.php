@@ -6,10 +6,10 @@ use App\Http\Controllers\BusController;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\MotorcycleController;
 
-use App\Interfaces\ImageUpload;
+use App\Interfaces\ImageManagement;
 use App\Interfaces\Vehicle;
 
-use App\Implementations\GoogleDriveImageUpload;
+use App\Implementations\GoogleDriveImageManagement;
 use App\Implementations\Bus;
 use App\Implementations\Car;
 use App\Implementations\Motorcycle;
@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(ImageUpload::class, GoogleDriveImageUpload::class);
+        $this->app->bind(ImageManagement::class, GoogleDriveImageManagement::class);
 
         $this->app->when(BusController::class)
                   ->needs(Vehicle::class)
