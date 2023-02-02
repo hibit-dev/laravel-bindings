@@ -8,9 +8,6 @@ Let's see some practical examples with Laravel. Therefore, PHP is used as progra
 ## Documentation
 You'll find instructions and full documentation on [HiBit](https://www.hibit.dev/posts/51/interfaces-binding-with-implementations-in-laravel).
 
-## Credits
-- [Laravel](https://github.com/laravel/laravel)
-
 ## Security
 If you discover any security related issues, please email security@hibit.dev instead of using the issue tracker.
 
